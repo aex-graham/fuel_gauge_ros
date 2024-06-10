@@ -4,9 +4,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include "ros/msg.h"
-#include "geometry_msgs/PolygonStamped.h"
-#include "greenzie_msgs/KeepOutZone.h"
 #include "greenzie_msgs/StripingState.h"
+#include "greenzie_msgs/KeepOutZone.h"
+#include "geometry_msgs/PolygonStamped.h"
 
 namespace greenzie_msgs
 {

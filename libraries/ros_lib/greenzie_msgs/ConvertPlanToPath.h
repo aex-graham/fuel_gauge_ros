@@ -4,8 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include "ros/msg.h"
-#include "greenzie_msgs/StripingPlan.h"
 #include "nav_msgs/Path.h"
+#include "greenzie_msgs/StripingPlan.h"
 
 namespace greenzie_msgs
 {

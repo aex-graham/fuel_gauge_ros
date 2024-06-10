@@ -1,4 +1,4 @@
-//#define USE_USBCON
+#define USE_USBCON
 #include <ros.h>
 #include <std_msgs/Int8.h>
 std_msgs::Int8 percent_full;
@@ -27,4 +27,12 @@ void loop() {
     pub_percent_full.publish(&percent_full);
   }
   nh.spinOnce();
+}
+
+int max(int v1, int v2) {
+  return (v1 >= v2) ? v1 : v2;
+}
+
+int min(int v1, int v2) {
+  return (v1 <= v2) ? v1 : v2;
 }

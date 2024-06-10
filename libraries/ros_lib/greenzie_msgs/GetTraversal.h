@@ -4,8 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include "ros/msg.h"
-#include "greenzie_msgs/StripingState.h"
 #include "geometry_msgs/Point.h"
+#include "greenzie_msgs/StripingState.h"
 
 namespace greenzie_msgs
 {
