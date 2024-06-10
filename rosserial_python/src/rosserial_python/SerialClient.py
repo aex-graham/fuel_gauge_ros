@@ -457,7 +457,7 @@ class SerialClient(object):
         data = ''
         read_step = None
         while self.write_thread.is_alive() and not rospy.is_shutdown():
-            if (rospy.Time.now() - self.lastsync).to_sec() > (self.timeout * 3):
+            if (rospy.Time.now() - self.lastsync).to_sec() > (self.timeout):
                 if self.synced:
                     rospy.logerr("Lost sync with device, restarting...")
                 else:
