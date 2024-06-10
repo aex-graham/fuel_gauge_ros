@@ -24,3 +24,8 @@ Assembly:
 * One jumper wire is connected to row 40 and GND.
 
 These row numbers can be changed as you see fit, but if you want to change the pin number, you'll have to change that in the .ino file too
+
+Usage:
+* Run `roscore`
+* Run `rosrun rosserial_python serial_node.py _port:=/dev/[your usb port]` in a different terminal
+* Run `rostopic echo /percent_full' in a different terminal
