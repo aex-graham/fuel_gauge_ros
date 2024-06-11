@@ -5,3 +5,8 @@ find_package(catkin REQUIRED)
 catkin_package()
 
 catkin_python_setup()
+
+catkin_install_python(
+  PROGRAMS nodes/serial_node.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
