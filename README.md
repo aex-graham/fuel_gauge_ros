@@ -20,3 +20,8 @@ Assembly:
 
 ![IMG_2692](https://github.com/aex-graham/fuel_gauge_ros/assets/107943530/103250b0-62f5-490d-b8b6-f19b2fcab802)
 (Ignore all the extra flat wires and the circuit board)
+
+Runnin the code:
+* Run `roscore` in one terminal 
+* Run `rosrun rosserial_python serial_node.py _port:=/dev/<your usb port>` in another terminal
+* To see the output, run `rostopic echo /percent_full` in another terminal
