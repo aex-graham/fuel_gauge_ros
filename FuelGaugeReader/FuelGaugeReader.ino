@@ -1,8 +1,8 @@
 #define USE_USBCON
 #include <ros.h>
-#include <std_msgs/Int8.h>
+#include <std_msgs/Float64.h>
 #include <Arduino.h>
-std_msgs::Int8 fuel_level_percent_full;
+std_msgs::Float64 fuel_level_percent_full;
 ros::Publisher pub_fuel_level("fuel_level_percent_full", &fuel_level_percent_full);
 ros::NodeHandle nh;
 
