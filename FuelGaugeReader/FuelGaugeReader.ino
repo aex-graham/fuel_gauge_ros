@@ -2,7 +2,9 @@
 #include <ros.h>
 #include <std_msgs/Float64.h>
 #include <Arduino.h>
-std_msgs::Float64 fuel_level_percent_full;
+std_msgs::Float64 fuel_level_percent_full;  // if memory is ever an issue this works as Int8, 
+                                            // is Float64 to accomidate higher quality sensors
+                                            // this gauge has discrete resistance steps so float gives no new data
 ros::Publisher pub_fuel_level("fuel_level_percent_full", &fuel_level_percent_full);
 ros::NodeHandle nh;
 
