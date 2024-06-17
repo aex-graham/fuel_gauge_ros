@@ -18,8 +18,7 @@ Assembly:
 * One resistor is connected to rows 40 and 45.
 * One jumper wire is connected to row 40 and GND.
 
-![IMG_2692](https://github.com/aex-graham/fuel_gauge_ros/assets/107943530/103250b0-62f5-490d-b8b6-f19b2fcab802)
-(Ignore all the extra flat wires and the circuit board)
+![circuit](https://github.com/aex-graham/fuel_gauge_ros/assets/107943530/411199a5-5ee6-4ef5-84df-e830020ed912)
 
 Runnin the code:
 * Open `FuelGaugeReader.ino` in the Arduino IDE
