@@ -18,10 +18,12 @@ Assembly:
 * One resistor is connected to rows 40 and 45.
 * One jumper wire is connected to row 40 and GND.
 
-![IMG_2692](https://github.com/aex-graham/fuel_gauge_ros/assets/107943530/103250b0-62f5-490d-b8b6-f19b2fcab802)
-(Ignore all the extra flat wires and the circuit board)
+![circuit (1)](https://github.com/aex-graham/fuel_gauge_ros/assets/107943530/6ec75459-5cb4-4d15-a250-f1e6e690d881)
 
 Runnin the code:
+* Open `FuelGaugeReader.ino` in the Arduino IDE
+* Install the `rosserial` library from `Tools > Manage Libraries`
+* Use the Arduino IDE to load the code into your board
 * Run `roscore` in one terminal 
 * Run `rosrun rosserial_python serial_node.py _port:=/dev/<your usb port>` in another terminal
-* To see the output, run `rostopic echo /percent_full` in another terminal
+* To see the output, run `rostopic echo /fuel_level_percent_full` in another terminal
